@@ -175,4 +175,24 @@ $venda = \Webdev\Singleton::getEntityManager()->getRepository('Webdev\Entidades\
 $item = \Webdev\Singleton::getEntityManager()->getRepository('Webdev\Entidades\Item')->findOneBy(['venda' => $venda]);
 \Webdev\Singleton::getEntityManager()->remove($item);
 
-\Webdev\Singleton::getEntityManager()->flush();
+//\Webdev\Singleton::getEntityManager()->flush();
+
+$repositorio = \Webdev\Singleton::getEntityManager()->getRepository('Webdev\Entidades\Venda');
+/* @var $repositorio \Webdev\Entidades\Repositorio\Venda */
+
+$resultado = $repositorio->getQuantidadesDeVendasPorVendedor();
+var_dump($resultado);
+
+$resultado = $repositorio->getQuantidadesDeClientesPorCidade();
+var_dump($resultado);
+
+$resultado = $repositorio->getValorTotalDeVendasPorLoja();
+var_dump($resultado);
+
+$resultado = $repositorio->getValorTotalDeVendasPorCliente();
+var_dump($resultado);
+
+$resultado = $repositorio->getValorTotalDeVendasPorProduto();
+var_dump($resultado);
+
+

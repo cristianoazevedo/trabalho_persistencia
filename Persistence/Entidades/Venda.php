@@ -13,7 +13,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * Class Venda
  * @package Webdev\Entidades
  *
- * @Entity
+ * @Entity(repositoryClass="Webdev\Entidades\Repositorio\Venda")
  * @Table(name="venda")
  */
 class Venda
