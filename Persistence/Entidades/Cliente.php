@@ -23,7 +23,7 @@ class Cliente
     /**
      * @ManyToOne(targetEntity="Webdev\Entidades\Cidade")
      * @JoinColumn(name="idCidade", referencedColumnName="idCidade")
-     * @var Cidade
+     * @var \Webdev\Entidades\Cidade
      */
     private $cidade;
     /**
@@ -84,7 +84,7 @@ class Cliente
     }
 
     /**
-     * @return Cidade
+     * @return \Webdev\Entidades\Cidade
      */
     public function getCidade()
     {

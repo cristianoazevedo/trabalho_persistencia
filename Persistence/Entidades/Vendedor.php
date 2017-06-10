@@ -31,7 +31,7 @@ class Vendedor
      */
     private $nome;
     /**
-     * @Column(type="decimal", precision=2, scale=1)
+     * @Column(type="decimal", precision=1, scale=2)
      * @var float
      */
     private $comissao;
